@@ -30,6 +30,14 @@ a{
     color: var(--title-color) !important;
 }
 
+.main_style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+}
+
 /* Navbar style */
 .custom_style_nav {
     background-color: transparent;
@@ -156,4 +164,15 @@ a{
   60% {
     transform: translateY(-15px);
   }
+}
+
+/* about me page */
+.about_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
 }
