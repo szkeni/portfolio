@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,11 +15,10 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav class="custom_style_nav navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#home">Liptai Klaudia</a>
-            <i class="bi bi-moon-fill"></i>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <button class="custom_navbar_toggler navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -44,19 +43,51 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Munkahelyek</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="true" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (dark)">
+                              <i class="bi me-2 bi-moon-fill"></i>
+                              <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text" data-bs-popper="static">
+                              <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                                    <i class="bi me-2 bi-sun-fill"></i>
+                                  Light
+                                </button>
+                              </li>
+                              <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center " data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="bi me-2 bi-moon-fill"></i>
+                                  Dark
+                                </button>
+                              </li>
+                              <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="bi me-2 bi-stars"></i>
+                                  Auto
+                                </button>
+                              </li>
+                            </ul>
+                          </li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
-    <main class="main">
-        <section class="home" id="home">
+    <main class="container-fluid">
+        <section class="container" id="home">
             <div class="home_container">
                 <div class="profile_image">
-
+                    <div class="glow-circle">
+                        <span></span>
+                        <span></span>
+                        <div class="glow-circle-img">
+                            <img src="img/profile.jpg" alt="Profile image">
+                        </div>
+                    </div>
                 </div>
                 <div class="introduction">
-
+                    
                 </div>
                 <div class="download_cv">
 

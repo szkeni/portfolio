@@ -16,12 +16,89 @@
 
     /* font */
     --main-font: 'Josefin Sans', sans-serif;
-}
 
-html {
-    scroll-behavior: smooth;
+    /* nav height */
+    --nav-height: 7rem;
 }
 
 body {
     font-family: var(--main-font) !important;
+    margin-top: var(--nav-height) !important;
+}
+
+/* Navbar style */
+.custom_style_nav {
+    background-color: transparent;
+}
+.custom_navbar_toggler {
+    border: none !important;
+}
+.custom_navbar_toggler:focus {
+    box-shadow: none !important;
+}
+
+
+/* Home body */
+.home_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.profile_image{
+    width: 9rem;
+    height: 9rem;
+}
+.profile_image .glow-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+.profile_image .glow-circle::after{
+    position: absolute;
+    content: '';
+    width: 8rem;
+    height: 8rem;
+    background: #4A4067;
+    border-radius: 50%;
+}
+.glow-circle span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#fc28d1, #0099ff);
+    border-radius: 50%;
+    animation: ringLight 5s linear infinite;
+}
+
+.glow-circle span:nth-child(1){
+    filter: blur(1rem);
+}
+.glow-circle-img{
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+.glow-circle-img img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 9rem;
+    object-fit: cover;
+}
+@keyframes ringLight{
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
