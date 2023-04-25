@@ -176,3 +176,30 @@ a{
     text-align: center;
     gap: 1rem;
 }
+
+/* skills page */
+.skills_main_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 3rem;
+}
+.skills_container, .lang_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+}
+.progress_bar{
+    text-align: left;
+}
+.progress_bar p {
+    margin-bottom: 0 !important;
+}
+.custom_progressbar{
+    background-color: var(--progress-bar) !important;
+}
