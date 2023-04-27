@@ -34,8 +34,7 @@
     <nav class="custom_style_nav navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#home">Liptai Klaudia</a>
-            <div class="nav-item d-flex flex-row">
-                <div class="nav-item dropdown custom_navbar_toggler navbar-toggler">
+                <div class="nav-item dropdown">
                     <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (light)">
                       <svg class="bi my-1 theme-icon-active"><use href="#sun-fill"></use></svg>
                       <span class="d-none ms-2" id="bd-theme-text"></span>
@@ -67,7 +66,7 @@
                 <button class="custom_navbar_toggler navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            </div>
+            
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menü</h5>
@@ -79,46 +78,24 @@
                             <a class="nav-link" aria-current="page" href="#home" data-i18n="nav.home">aaaa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about" data-i18n="nav.page1">Rólam</a>
+                            <a class="nav-link" href="#about" data-i18n="nav.about">Rólam</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills" data-i18n="nav.page2">Készségek</a>
+                            <a class="nav-link" href="#skills" data-i18n="nav.skills">Készségek</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tanulmányok</a>
+                            <a class="nav-link" href="#schools" data-i18n="nav.schools">Tanulmányok</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Munkahelyek</a>
-                        </li>            
-                        <li class="nav-item dropdown">
-                            <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (light)">
-                              <svg class="bi my-1 theme-icon-active"><use href="#sun-fill"></use></svg>
-                              <span class="d-none ms-2" id="bd-theme-text">Toggle theme</span>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
-                              <li>
-                                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
-                                  <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
-                                  Light
-                                  <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                                </button>
-                              </li>
-                              <li>
-                                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                                  <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
-                                  Dark
-                                  <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                                </button>
-                              </li>
-                              <li>
-                                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
-                                  <svg class="bi me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
-                                  Auto
-                                  <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                                </button>
-                              </li>
-                            </ul>
+                            <a class="nav-link" href="#jobs" data-i18n="nav.jobs">Munkahelyek</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hobbies" data-i18n="nav.hobbies">Hobbik</a>
+                        </li>
+                        <select class="nav-item form-select" aria-label="Language selector">
+                            <option selected>HU</option>
+                            <option value="1">EN</option>
+                        </select>
                     </ul>
                 </div>
             </div>
@@ -137,29 +114,29 @@
                     </div>
                 </div>
                 <div class="introduction">
-                    <p class="fs-2 fw-bold">Hello, Klaudia vagyok</p>
-                    <p class="fs-3 fw-medium">Webfejlesztő</p>
-                    <p class="fs-5 fw-normal">szovegszoveg szovegszovegszoveg szoveg</p>
+                    <p class="fs-2 fw-bold" data-i18n="introduction.line1">Hello, Klaudia vagyok</p>
+                    <p class="fs-3 fw-medium" data-i18n="introduction.line2">Webfejlesztő</p>
+                    <p class="fs-5 fw-normal" data-i18n="introduction.line3">szovegszoveg szovegszovegszoveg szoveg</p>
                 </div>
                 <div class="download_cv">
-                    <a href="https://github.com/szkeni/portfolio/raw/master/assets/liptai_klaudia_cv.pdf" class="download_cv_button" download="liptai_klaudia_cv.pdf">Önéletrajz letöltése<i class="bi bi-file-earmark-arrow-down"></i></a>
+                    <a href="https://github.com/szkeni/portfolio/raw/master/assets/liptai_klaudia_cv.pdf" class="download_cv_button" download="liptai_klaudia_cv.pdf" data-i18n="download.cv">Önéletrajz letöltése<i class="bi bi-file-earmark-arrow-down"></i></a>
                 </div>
                 <div class="more_about_me">
-                    <p class="fs-6 fw-normal">Görgess lejjebb és ismerj meg jobban</p>
+                    <p class="fs-6 fw-normal" data-i18n="more.about">Görgess lejjebb és ismerj meg jobban</p>
                     <i class="fs-1 bi bi-arrow-down arrow_down"></i>
                 </div>
             </div>
         </section>
         <section class="container" id="about">
             <div class="about_container">
-                <p class="fs-1 fw-bold">Rólam</p>
-                <p class="fs-3 fw-medium">szovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szoveg</p>    
+                <p class="fs-1 fw-bold" data-i18n="about.line1">Rólam</p>
+                <p class="fs-3 fw-medium" data-i18n="about.line2">szovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szoveg</p>    
             </div>
         </section>
         <section class="container" id="skills">
             <div class="skills_main_container">
                 <div class="skills_container">
-                    <p class="fs-1 fw-bold">Készségek</p>
+                    <p class="fs-1 fw-bold" data-i18n="skills.title">Készségek</p>
                     <div class="progress_bar">
                         <p class="fs-3 fw-medium">HTML</p>
                         <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -198,15 +175,15 @@
                     </div>
                 </div>
                 <div class="lang_container">
-                    <p class="fs-1 fw-bold">Nyelvek</p>
+                    <p class="fs-1 fw-bold" data-i18n="langs.title">Nyelvek</p>
                     <div class="progress_bar">
-                        <p class="fs-3 fw-medium">Magyar</p>
+                        <p class="fs-3 fw-medium" data-i18n="langs.lang1">Magyar</p>
                         <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                             <div class="progress-bar custom_progressbar" style="width: 25%"></div>
                         </div>
                     </div>
                     <div class="progress_bar">
-                        <p class="fs-3 fw-medium">Angol</p>
+                        <p class="fs-3 fw-medium" data-i18n="langs.lang2">Angol</p>
                         <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                             <div class="progress-bar custom_progressbar" style="width: 25%"></div>
                         </div>
@@ -217,39 +194,39 @@
         <section class="container" id="schools">
             <div class="schools_container">
                 <div class="school_history">
-                    <p class="fs-1 fw-bold">Tanulmányok</p>
+                    <p class="fs-1 fw-bold" data-i18n="schools.title">Tanulmányok</p>
                     <div class="school_bio">
-                        <p class="fs-3 fw-medium">Középiskola</p>
-                        <p class="fs-4 fw-medium">2015. szeptember - 2019. június</p>
+                        <p class="fs-3 fw-medium" data-i18n="schools.line1">Középiskola</p>
+                        <p class="fs-4 fw-medium" data-i18n="schools.line2">2015. szeptember - 2019. június</p>
                         <p class="fs-6 fw-normal">Budapesti Gazdasági SZC Pestszentlőrinci Technikum</p>
                     </div>
                     <div class="school_bio">
-                        <p class="fs-3 fw-medium">Szakképesítés</p>
-                        <p class="fs-4 fw-medium">2019. szeptember - 2020. június</p>
+                        <p class="fs-3 fw-medium" data-i18n="schools.line4">Szakképesítés</p>
+                        <p class="fs-4 fw-medium" data-i18n="schools.line5">2019. szeptember - 2020. június</p>
                         <p class="fs-6 fw-normal">Budapesti Gazdasági SZC Pestszentlőrinci Technikum</p>
                     </div>
                 </div>
                 <div class="school_history">
-                    <p class="fs-1 fw-bold">Munkahelyek</p>
+                    <p class="fs-1 fw-bold" data-i18n="jobs.title">Munkahelyek</p>
                     <div class="school_bio">
                         <p class="fs-3 fw-medium">Insine Kft.</p>
-                        <p class="fs-4 fw-medium">2021 Június -</p>
-                        <p class="fs-6 fw-normal">Front-end fejlesztő</p>
+                        <p class="fs-4 fw-medium" data-i18n="jobs.line1">2021 Június -</p>
+                        <p class="fs-6 fw-normal" data-i18n="jobs.line2">Front-end fejlesztő</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="container" id="hobbies">
             <div class="hobby_main">
-                <p class="fs-1 fw-bold">Hobbik</p>
+                <p class="fs-1 fw-bold" data-i18n="hobbies.title">Hobbik</p>
                 <div class="hobbies_container">
                     <div class="hobby_card">
                         <div class="hobby_icon">
                         <i class="bi bi-controller"></i>
                         </div>
                         <div class="content">
-                        <p class="fs-3 fw-medium">Játékok</p>
-                        <p class="fs-6 fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis numquam, alias laborum eaque natus dolor totam perspiciatis adipisci ipsum rem amet nobis commodi placeat!</p>
+                        <p class="fs-3 fw-medium" data-i18n="hobbies.numberOne">Játékok</p>
+                        <p class="fs-6 fw-normal" data-i18n="hobbies.line1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis numquam, alias laborum eaque natus dolor totam perspiciatis adipisci ipsum rem amet nobis commodi placeat!</p>
                         </div>
                     </div>
                     <div class="hobby_card">
@@ -257,8 +234,8 @@
                             <i class="bi bi-universal-access"></i>
                         </div>
                         <div class="content">
-                            <p class="fs-3 fw-medium">Edzés</p>
-                            <p class="fs-6 fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis numquam, alias laborum eaque natus dolor totam perspiciatis adipisci ipsum rem amet nobis commodi placeat!</p>
+                            <p class="fs-3 fw-medium" data-i18n="hobbies.numberTwo">Edzés</p>
+                            <p class="fs-6 fw-normal" data-i18n="hobbies.line2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis numquam, alias laborum eaque natus dolor totam perspiciatis adipisci ipsum rem amet nobis commodi placeat!</p>
                         </div>
                     </div>
                     <div class="hobby_card">
@@ -266,8 +243,8 @@
                             <i class="bi bi-camera-reels"></i>
                         </div>
                         <div class="content">
-                            <p class="fs-3 fw-medium">Filmek</p>
-                            <p class="fs-6 fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis numquam, alias laborum eaque natus dolor totam perspiciatis adipisci ipsum rem amet nobis commodi placeat!</p>
+                            <p class="fs-3 fw-medium" data-i18n="hobbies.numberThree">Filmek</p>
+                            <p class="fs-6 fw-normal" data-i18n="hobbies.line3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis numquam, alias laborum eaque natus dolor totam perspiciatis adipisci ipsum rem amet nobis commodi placeat!</p>
                         </div>
                     </div>
                     <div class="hobby_card">
@@ -275,8 +252,8 @@
                             <i class="bi bi-palette"></i>
                         </div>
                         <div class="content">
-                            <p class="fs-3 fw-medium">Smink</p>
-                            <p class="fs-6 fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis numquam, alias laborum eaque natus dolor totam perspiciatis adipisci ipsum rem amet nobis commodi placeat!</p>
+                            <p class="fs-3 fw-medium" data-i18n="hobbies.numberFour">Smink</p>
+                            <p class="fs-6 fw-normal" data-i18n="hobbies.line4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis numquam, alias laborum eaque natus dolor totam perspiciatis adipisci ipsum rem amet nobis commodi placeat!</p>
                         </div>
                     </div>
                 </div>

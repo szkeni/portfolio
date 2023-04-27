@@ -52,6 +52,13 @@ a{
 .custom_navbar_toggler:focus {
     box-shadow: none !important;
 }
+.form-select{
+    width: auto !important;
+    border: none !important;
+}
+.form-select:focus{
+    box-shadow: none !important;
+}
 
 
 /* Home body */
