@@ -29,7 +29,11 @@ a{
     text-decoration: none !important;
     color: var(--title-color) !important;
 }
-
+.bi{
+    width: 1em;
+    height: 1em;
+    vertical-align: -.125em;
+}
 .main_style{
     display: flex;
     justify-content: center;
@@ -40,7 +44,7 @@ a{
 
 /* Navbar style */
 .custom_style_nav {
-    background-color: transparent;
+    background-color: var(--bs-body-bg);
 }
 .custom_navbar_toggler {
     border: none !important;
@@ -205,4 +209,29 @@ a{
 }
 .custom_progressbar{
     background-color: var(--progress-bar) !important;
+}
+
+/* schools */
+.schools_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 3rem;
+}
+.school_history{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 3rem;
+}
+.school_bio{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
 }
