@@ -72,6 +72,13 @@ const lngs = {
                     numberFour: "Make-up",
                     line4: "loremipsum",
                   },
+                  contact: {
+                    title: "Message me",
+                    first: "First name",
+                    last: "Last name",
+                    text: "Message",
+                    submit: "Send message",
+                  },
                 },
               },
               hu: {
@@ -132,6 +139,13 @@ const lngs = {
                     line3: "loremipsum",
                     numberFour: "Smink",
                     line4: "loremipsum",
+                  },
+                  contact: {
+                    title: "Üzenj nekem",
+                    first: "Keresztnév",
+                    last: "Vezetéknév",
+                    text: "Üzenet",
+                    submit: "Küldés",
                   },
                 },
               },

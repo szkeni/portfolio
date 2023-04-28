@@ -6,7 +6,8 @@
 .download_cv,
 .custom_style_nav,
 .hello_text,
-.progress{
+.progress,
+#contactme{
     display: none !important;
 }
 section{

@@ -20,10 +20,14 @@
     /* nav height */
     --nav-height: 7rem;
 }
+html {
+  scroll-padding-top: var(--nav-height) !important; /* height of sticky header */
+}
 
 body {
     font-family: var(--main-font) !important;
-    margin-top: var(--nav-height) !important;
+    padding-top: var(--nav-height) !important;
+    padding-bottom: var(--nav-height) !important;
 }
 a{
     text-decoration: none !important;
@@ -349,6 +353,28 @@ a{
     text-align: center;
     color: #000000 !important;
 }
+
+/* contact me */
+.contact_me_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 3rem;
+}
+.submit_button{
+    background-color: var(--button-color);
+    border-radius: 2rem;
+    padding: 0.5rem 3rem;
+    border: none;
+}
+.form-control:focus{
+    box-shadow: none !important;
+    border-color: var(--button-color) !important;
+}
+
 @media (min-width: 992px) {
     .skills_main_container, .schools_container{
         flex-direction: row;
