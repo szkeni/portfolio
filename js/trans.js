@@ -25,6 +25,12 @@ const lngs = {
                     schools: "Schools",
                     jobs: "Jobs",
                     hobbies: "Hobbies",
+                    contact: "Contact me",
+                  },
+                  colormode: {
+                    light: "Light",
+                    dark: "Dark",
+                    auto: "Auto",
                   },
                   introduction: {
                     line1: "Hello, I'm Klaudia",
@@ -93,6 +99,12 @@ const lngs = {
                     schools: "Tanulmányok",
                     jobs: "Munkahelyek",
                     hobbies: "Hobbik",
+                    contact: "Kapcsolat",
+                  },
+                  colormode: {
+                    light: "Világos",
+                    dark: "Sötét",
+                    auto: "Auto",
                   },
                   introduction: {
                     line1: "Hello, Klaudia vagyok",

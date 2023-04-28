@@ -29,7 +29,7 @@ body {
     padding-top: var(--nav-height) !important;
     padding-bottom: var(--nav-height) !important;
 }
-a{
+.download_cv a{
     text-decoration: none !important;
     color: var(--title-color) !important;
 }
@@ -63,16 +63,23 @@ a{
 .form-select:focus{
     box-shadow: none !important;
 }
+.dropdown-item.active,.dropdown-item:active{
+    background-color: var(--icon-color) !important;
+}
 
 
 /* Home body */
-.home_container{
+.home_container, .home_text_container, .home_image_container, .home_main_container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
     gap: 2rem;
+}
+#home{
+    height: 80vh;
+    align-items: center;
 }
 .profile_image{
     width: 9rem;
@@ -275,14 +282,11 @@ a{
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    width: 20rem;
-    height: 30rem;
+    width: 14rem;
+    height: 20rem;
     border-radius: 50px;
     border-bottom-left-radius: 160px;
     border-bottom-right-radius: 160px;
-    box-shadow: 0 15px 0 #fff,
-            inset 0 -15px 0 rgba(255, 255, 255, 0.24),
-            0 45px 0 rgba(0, 0, 0, 0.15);
     overflow: hidden;
      
 }
@@ -306,8 +310,6 @@ a{
     height: 120px;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    box-shadow: 0 15px 0 rgba(0, 0, 0, 0.1),
-            inset 0 -8px 0 #fff;
     z-index: 100;
     display: flex;
     justify-content: center;
@@ -369,6 +371,7 @@ a{
     border-radius: 2rem;
     padding: 0.5rem 3rem;
     border: none;
+    color: var(--title-color);
 }
 .form-control:focus{
     box-shadow: none !important;
@@ -376,6 +379,25 @@ a{
 }
 
 @media (min-width: 992px) {
+    #home{
+        display: flex;
+        align-items: center;
+    }
+    .home_container{
+        flex-direction: row-reverse;
+    }
+    .home_main_container{
+        gap: 8rem;
+    }
+    .home_text_container, .home_image_container{
+        width: 50%;
+    }
+    .home_text_container{
+        gap: 0.5rem;
+    }
+    .glow-circle{
+        transform: scale(2);
+    }
     .skills_main_container, .schools_container{
         flex-direction: row;
         width: 100%;

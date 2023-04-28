@@ -16,49 +16,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js" integrity="sha512-79RgNpOyaf8AvNEUdanuk1x6g53UPoB6Fh2uogMkOMGADBG6B0DCzxc+dDktXkVPg2rlxGvPeAFKoZxTycVooQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-        <symbol id="check2" viewBox="0 0 16 16">
-          <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
-        </symbol>
-        <symbol id="circle-half" viewBox="0 0 16 16">
-          <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
-        </symbol>
-        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-          <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
-          <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
-        </symbol>
-        <symbol id="sun-fill" viewBox="0 0 16 16">
-          <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
-        </symbol>
-      </svg>
     <nav class="custom_style_nav navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#home">Liptai Klaudia</a>
                 <div class="nav-item dropdown">
                     <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (light)">
-                      <svg class="bi my-1 theme-icon-active"><use href="#sun-fill"></use></svg>
+                      <i class="bi me-1 mb-2 theme-icon-active"></i>
                       <span class="d-none ms-2" id="bd-theme-text"></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
                       <li>
                         <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
-                          <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
-                          Light
-                          <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                            <i id="sun" class="bi me-1 mb-2 bi-sun-fill" data-colormode="bi-sun-fill"></i>
+                          <p class="m-0" data-i18n="colormode.light">Light</p>
                         </button>
                       </li>
                       <li>
                         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                          <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
-                          Dark
-                          <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                            <i id="moon" class="bi me-1 mb-2 bi-moon-fill" data-colormode="bi-moon-fill"></i>
+                            <p class="m-0" data-i18n="colormode.dark">Dark</p>
                         </button>
                       </li>
                       <li>
                         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
-                          <svg class="bi me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
-                          Auto
-                          <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                            <i id="auto" class="bi me-1 mb-2 bi-mask" data-colormode="bi-mask"></i>
+                            <p class="m-0" data-i18n="colormode.auto">Auto</p>
                         </button>
                       </li>
                     </ul>
@@ -92,6 +74,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#hobbies" data-i18n="nav.hobbies">Hobbik</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" data-i18n="nav.contact">Üzenj nekem</a>
+                        </li>
                         <select name="language" id="languageSwitcher" class="nav-item form-select" aria-label="Language selector">
                         </select>
                     </ul>
@@ -101,24 +86,30 @@
     </nav>
     <main class="container-fluid main_style">
         <section class="container" id="home">
-            <div class="home_container">
-                <div class="profile_image">
-                    <div class="glow-circle">
-                        <span></span>
-                        <span></span>
-                        <div class="glow-circle-img">
-                            <img src="img/profile.jpg" alt="Profile image">
+            <div class="home_main_container">
+                <div class="home_container">
+                    <div class="home_image_container">
+                        <div class="profile_image">
+                            <div class="glow-circle">
+                                <span></span>
+                                <span></span>
+                                <div class="glow-circle-img">
+                                    <img src="img/profile.jpg" alt="Profile image">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="introduction">
-                    <p class="fs-2 fw-bold hello_text" data-i18n="introduction.line1">Hello, Klaudia vagyok</p>
-                    <p class="fs-2 fw-bold print_name">Liptai Klaudia</p>
-                    <p class="fs-3 fw-medium" data-i18n="introduction.line2">Webfejlesztő</p>
-                    <p class="fs-5 fw-normal" data-i18n="introduction.line3">szovegszoveg szovegszovegszoveg szoveg</p>
-                </div>
-                <div class="download_cv">
-                    <a href="https://github.com/szkeni/portfolio/raw/master/assets/liptai_klaudia_cv.pdf" class="download_cv_button" download="liptai_klaudia_cv.pdf" data-i18n="download.cv">Önéletrajz letöltése<i class="bi bi-file-earmark-arrow-down"></i></a>
+                    <div class="home_text_container">
+                        <div class="introduction">
+                            <p class="fs-2 fw-bold hello_text" data-i18n="introduction.line1">Hello, Klaudia vagyok</p>
+                            <p class="fs-2 fw-bold print_name">Liptai Klaudia</p>
+                            <p class="fs-3 fw-medium" data-i18n="introduction.line2">Webfejlesztő</p>
+                            <p class="fs-5 fw-normal" data-i18n="introduction.line3">szovegszoveg szovegszovegszoveg szoveg</p>
+                        </div>
+                        <div class="download_cv">
+                            <a href="https://github.com/szkeni/portfolio/raw/master/assets/liptai_klaudia_cv.pdf" class="download_cv_button" download="liptai_klaudia_cv.pdf" data-i18n="download.cv">Önéletrajz letöltése</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="more_about_me">
                     <p class="fs-6 fw-normal" data-i18n="more.about">Görgess lejjebb és ismerj meg jobban</p>
@@ -138,37 +129,79 @@
                     <p class="fs-2 fw-bold" data-i18n="skills.title">Készségek</p>
                     <div class="progressbar_container">
                         <div class="progress_bar">
-                            <p class="fs-3 fw-medium">HTML</p>
+                            <p class="fs-5 fw-medium">HTML</p>
                             <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar custom_progressbar" style="width: 25%"></div>
                             </div>
                         </div>
                         <div class="progress_bar">
-                            <p class="fs-3 fw-medium">CSS</p>
+                            <p class="fs-5 fw-medium">CSS</p>
                             <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar custom_progressbar" style="width: 25%"></div>
                             </div>
                         </div>
                         <div class="progress_bar">
-                            <p class="fs-3 fw-medium">Less</p>
+                            <p class="fs-5 fw-medium">Less</p>
                             <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar custom_progressbar" style="width: 25%"></div>
                             </div>
                         </div>
                         <div class="progress_bar">
-                            <p class="fs-3 fw-medium">Bootstrap</p>
+                            <p class="fs-5 fw-medium">Bootstrap</p>
                             <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar custom_progressbar" style="width: 25%"></div>
                             </div>
                         </div>
                         <div class="progress_bar">
-                            <p class="fs-3 fw-medium">JavaScript</p>
+                            <p class="fs-5 fw-medium">JavaScript</p>
                             <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar custom_progressbar" style="width: 25%"></div>
                             </div>
                         </div>
                         <div class="progress_bar">
-                            <p class="fs-3 fw-medium">PhotoShop</p>
+                            <p class="fs-5 fw-medium">PhotoShop</p>
+                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar custom_progressbar" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <div class="progress_bar">
+                            <p class="fs-5 fw-medium">jQuery</p>
+                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar custom_progressbar" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <div class="progress_bar">
+                            <p class="fs-5 fw-medium">Twig</p>
+                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar custom_progressbar" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <div class="progress_bar">
+                            <p class="fs-5 fw-medium">MySQL</p>
+                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar custom_progressbar" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <div class="progress_bar">
+                            <p class="fs-5 fw-medium">Figma</p>
+                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar custom_progressbar" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <div class="progress_bar">
+                            <p class="fs-5 fw-medium">PHP</p>
+                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar custom_progressbar" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <div class="progress_bar">
+                            <p class="fs-5 fw-medium">C#</p>
+                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar custom_progressbar" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <div class="progress_bar">
+                            <p class="fs-5 fw-medium">Cloudflare</p>
                             <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar custom_progressbar" style="width: 25%"></div>
                             </div>
@@ -179,13 +212,13 @@
                     <p class="fs-2 fw-bold" data-i18n="langs.title">Nyelvek</p>
                     <div class="progressbar_container">
                         <div class="progress_bar">
-                            <p class="fs-3 fw-medium" data-i18n="langs.lang1">Magyar</p>
+                            <p class="fs-5 fw-medium" data-i18n="langs.lang1">Magyar</p>
                             <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar custom_progressbar" style="width: 25%"></div>
                             </div>
                         </div>
                         <div class="progress_bar">
-                            <p class="fs-3 fw-medium" data-i18n="langs.lang2">Angol</p>
+                            <p class="fs-5 fw-medium" data-i18n="langs.lang2">Angol</p>
                             <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar custom_progressbar" style="width: 25%"></div>
                             </div>
