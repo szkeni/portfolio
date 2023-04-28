@@ -137,6 +137,9 @@ a{
     width: 80%;
     text-align: center;
 }
+.print_name{
+    display: none;
+}
 .download_cv{
     display: flex;
     justify-content: center;
@@ -200,7 +203,7 @@ a{
     text-align: center;
     gap: 3rem;
 }
-.skills_container, .lang_container{
+.skills_container, .lang_container, .progressbar_container{
     display: flex;
     justify-content: center;
     flex-direction: column;

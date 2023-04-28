@@ -1,0 +1,72 @@
+*{
+    font-size: 12px !important; 
+}
+.profile_image, 
+.more_about_me,
+.download_cv,
+.custom_style_nav,
+.hello_text,
+.progress{
+    display: none !important;
+}
+section{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.print_name{
+    display: block !important;
+}
+.skills_main_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.skills_container, .lang_container, .progressbar_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+}
+.progressbar_container{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.schools_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    gap: 3rem;
+    align-items: flex-start;
+}
+.school_history{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+}
+.school_bio{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+.hobbies_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 3rem;
+}
