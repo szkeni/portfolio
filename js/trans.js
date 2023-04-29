@@ -58,7 +58,7 @@ const lngs = {
                     title: "Education",
                     line1: "High School",
                     line2: "2015. September - 2019. June",
-                    line4: "After High School",
+                    line4: "Qualifications",
                     line5: "2019. September - 2020. June",
                   },
                   jobs: {
