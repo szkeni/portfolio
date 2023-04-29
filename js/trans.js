@@ -10,7 +10,7 @@ const lngs = {
   $(function () {
     i18next
       .init({
-        debug: true,
+        debug: false,
         fallbackLng: 'hu',
         resources: {
             en: {
@@ -35,7 +35,6 @@ const lngs = {
                   introduction: {
                     line1: "Hello, I'm Klaudia",
                     line2: "Webdeveloper",
-                    line3: "loremipsum",
                   },
                   download: {
                     cv: "Download CV",
@@ -45,7 +44,7 @@ const lngs = {
                   },
                   about: {
                     line1: "About me",
-                    line2: "loremipsum",
+                    line2: "As a beginner, my main goal is to expand my knowledge. I quickly learn new things. My aim is to complete my tasks to the best of my ability. My strength is web development, both in building graphical interfaces and writing background elements. Overall, as a highly motivated and dedicated professional, I believe I am capable of achieving excellent results. My skills, experience, and personal qualities can be valuable tools for any organization or team.",
                   },
                   skills: {
                     title: "Skills",
@@ -70,13 +69,11 @@ const lngs = {
                   hobbies: {
                     title: "Hobbies",
                     numberOne: "Gaming",
-                    line1: "loremipsum",
+                    line1: "Games allow people to unwind, relieve stress, or simply have fun with their friends and family.",
                     numberTwo: "Working out",
-                    line2: "loremipsum",
-                    numberThree: "Movies",
-                    line3: "loremipsum",
+                    line2: "Exercise is not only important for health and well-being, but it also provides an opportunity to meet new people or strengthen friendships during workouts.",
                     numberFour: "Make-up",
-                    line4: "loremipsum",
+                    line4: "Makeup as a hobby provides people with the opportunity to express their creativity and self-expression through the use of cosmetics.",
                   },
                   contact: {
                     title: "Message me",
@@ -109,7 +106,6 @@ const lngs = {
                   introduction: {
                     line1: "Hello, Klaudia vagyok",
                     line2: "Webfejlesztő",
-                    line3: "loremipsum",
                   },
                   download: {
                     cv: "Önéletrajz letöltése",
@@ -119,7 +115,7 @@ const lngs = {
                   },
                   about: {
                     line1: "Rólam",
-                    line2: "loremipsum",
+                    line2: "Pályakezdőként legfőbb célom bővíteni a tudásom. Gyorsan elsajátítom az új ismereteket. Célom, hogy a feladataim a legjobb tudásom szerint végezzem el. Erősségem a webfejlesztés, grafikus felületek felépítése és háttérelemek megírása egyaránt. Összességében magas szintű motivációval és elkötelezettséggel rendelkező szakemberként hiszem, hogy képes vagyok kiváló eredmények elérésére. A készségeim, tapasztalataim és személyes tulajdonságaim együttesen értékes eszközök lehetnek bármely szervezet vagy csapat számára.",
                   },
                   skills: {
                     title: "Készségek",
@@ -138,19 +134,17 @@ const lngs = {
                   },
                   jobs: {
                     title: "Munkahelyek",
-                    lang1: "2021 Június -",
-                    lang2: "Front-end fejlesztő",
+                    line1: "2021 Június -",
+                    line2: "Front-end fejlesztő",
                   },
                   hobbies: {
                     title: "Hobbik",
                     numberOne: "Játékok",
-                    line1: "loremipsum",
+                    line1: " A játékok lehetővé teszik az emberek számára, hogy kikapcsolódjanak, stresszt levezessenek, vagy éppen szórakozzanak barátaikkal és családjukkal.",
                     numberTwo: "Edzés",
-                    line2: "loremipsum",
-                    numberThree: "Filmek",
-                    line3: "loremipsum",
+                    line2: "Az edzés nem csak az egészség és a jó közérzet szempontjából fontos, hanem lehetőséget ad arra is, hogy új embereket ismerjünk meg, vagy éppen megerősítsük barátságainkat az edzések során.",
                     numberFour: "Smink",
-                    line4: "loremipsum",
+                    line4: "A sminkelés mint hobbi lehetőséget ad az embereknek arra, hogy kifejezzék kreativitásukat és önkifejezésüket a smink segítségével.",
                   },
                   contact: {
                     title: "Üzenj nekem",

@@ -35,13 +35,16 @@
   background: #aa74cc; 
 }
 html {
-  scroll-padding-top: var(--nav-height) !important; /* height of sticky header */
+  scroll-padding-top: var(--nav-height) !important;
 }
 
 body {
     font-family: var(--main-font) !important;
     padding-top: var(--nav-height) !important;
     padding-bottom: var(--nav-height) !important;
+    background: radial-gradient( rgba(0, 0, 0, 0.05) 8%, transparent 8%);
+    background-position: 0% 0%;
+    background-size: 5vmin 5vmin;
 }
 .download_cv a{
     text-decoration: none !important;
@@ -79,6 +82,9 @@ body {
 }
 .dropdown-item.active,.dropdown-item:active{
     background-color: var(--icon-color) !important;
+}
+.offcanvas{
+    width: 15rem !important;
 }
 
 
@@ -238,6 +244,8 @@ body {
 }
 .progressbar_container{
     justify-content: flex-start;
+}
+.skills_container .progressbar_container{
     height: 20rem;
     overflow-y: auto;
 }
@@ -299,11 +307,11 @@ body {
 .hobby_card {
     background: linear-gradient(to bottom, #ff2ae0, #645bf6);
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     position: relative;
     width: 14rem;
-    height: 20rem;
     border-radius: 50px;
     border-bottom-left-radius: 160px;
     border-bottom-right-radius: 160px;
@@ -325,7 +333,6 @@ body {
     filter: blur(5px);
 }
 .hobby_card .hobby_icon {
-    position: relative;
     width: 140px;
     height: 120px;
     border-bottom-left-radius: 100px;
@@ -368,10 +375,9 @@ body {
 
 
 .hobby_card .content {
-    position: absolute;
     width: 100%;
-    padding: 30px;
-    padding-top: 150px;
+    padding: 24px;
+    padding-top: 0;
     text-align: center;
     color: #000000 !important;
 }
@@ -429,6 +435,7 @@ body {
     }
     .hobbies_container{
         flex-direction: row;
+        align-items: stretch;
     }
 
 }

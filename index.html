@@ -57,7 +57,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#home" data-i18n="nav.home">aaaa</a>
+                            <a class="nav-link" aria-current="page" href="#home" data-i18n="nav.home">Főoldal</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about" data-i18n="nav.about">Rólam</a>
@@ -75,7 +75,7 @@
                             <a class="nav-link" href="#hobbies" data-i18n="nav.hobbies">Hobbik</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact" data-i18n="nav.contact">Üzenj nekem</a>
+                            <a class="nav-link" href="#contactme" data-i18n="nav.contact">Üzenj nekem</a>
                         </li>
                         <select name="language" id="languageSwitcher" class="nav-item form-select" aria-label="Language selector">
                         </select>
@@ -104,7 +104,6 @@
                             <p class="fs-2 fw-bold hello_text" data-i18n="introduction.line1">Hello, Klaudia vagyok</p>
                             <p class="fs-2 fw-bold print_name">Liptai Klaudia</p>
                             <p class="fs-3 fw-medium" data-i18n="introduction.line2">Webfejlesztő</p>
-                            <p class="fs-5 fw-normal" data-i18n="introduction.line3">szovegszoveg szovegszovegszoveg szoveg</p>
                         </div>
                         <div class="download_cv">
                             <a href="https://github.com/szkeni/portfolio/raw/master/assets/liptai_klaudia_cv.pdf" class="download_cv_button" download="liptai_klaudia_cv.pdf" data-i18n="download.cv">Önéletrajz letöltése</a>
@@ -120,7 +119,14 @@
         <section class="container" id="about">
             <div class="about_container">
                 <p class="fs-2 fw-bold" data-i18n="about.line1">Rólam</p>
-                <p class="fs-3 fw-medium" data-i18n="about.line2">szovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szovegszovegszoveg szoveg</p>    
+                <p class="fs-5 fw-medium" data-i18n="about.line2">Pályakezdőként legfőbb célom bővíteni a tudásom. Gyorsan elsajátítom az új 
+                    ismereteket. Célom, hogy a feladataim a legjobb tudásom szerint végezzem el.
+                    Erősségem a webfejlesztés, grafikus felületek felépítése és háttérelemek megírása 
+                    egyaránt.
+                    Összességében magas szintű motivációval és elkötelezettséggel rendelkező 
+                    szakemberként hiszem, hogy képes vagyok kiváló eredmények elérésére. A 
+                    készségeim, tapasztalataim és személyes tulajdonságaim együttesen értékes 
+                    eszközök lehetnek bármely szervezet vagy csapat számára.</p>    
             </div>
         </section>
         <section class="container" id="skills">
@@ -242,7 +248,7 @@
                         <p class="fs-6 fw-normal">Budapesti Gazdasági SZC Pestszentlőrinci Technikum</p>
                     </div>
                 </div>
-                <div class="school_history">
+                <div class="school_history" id="jobs">
                     <p class="fs-2 fw-bold" data-i18n="jobs.title">Munkahelyek</p>
                     <div class="school_bio">
                         <p class="fs-3 fw-medium">Insine Kft.</p>
@@ -262,7 +268,7 @@
                         </div>
                         <div class="content">
                         <p class="fs-3 fw-medium" data-i18n="hobbies.numberOne">Játékok</p>
-                        <p class="fs-6 fw-normal" data-i18n="hobbies.line1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis numquam, alias laborum eaque natus dolor totam perspiciatis adipisci ipsum rem amet nobis commodi placeat!</p>
+                        <p class="fs-6 fw-normal" data-i18n="hobbies.line1"> A játékok lehetővé teszik az emberek számára, hogy kikapcsolódjanak, stresszt levezessenek, vagy éppen szórakozzanak barátaikkal és családjukkal.</p>
                         </div>
                     </div>
                     <div class="hobby_card">
@@ -271,16 +277,7 @@
                         </div>
                         <div class="content">
                             <p class="fs-3 fw-medium" data-i18n="hobbies.numberTwo">Edzés</p>
-                            <p class="fs-6 fw-normal" data-i18n="hobbies.line2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis numquam, alias laborum eaque natus dolor totam perspiciatis adipisci ipsum rem amet nobis commodi placeat!</p>
-                        </div>
-                    </div>
-                    <div class="hobby_card">
-                        <div class="hobby_icon">
-                            <i class="bi bi-camera-reels"></i>
-                        </div>
-                        <div class="content">
-                            <p class="fs-3 fw-medium" data-i18n="hobbies.numberThree">Filmek</p>
-                            <p class="fs-6 fw-normal" data-i18n="hobbies.line3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis numquam, alias laborum eaque natus dolor totam perspiciatis adipisci ipsum rem amet nobis commodi placeat!</p>
+                            <p class="fs-6 fw-normal" data-i18n="hobbies.line2">Az edzés nem csak az egészség és a jó közérzet szempontjából fontos, hanem lehetőséget ad arra is, hogy új embereket ismerjünk meg, vagy éppen megerősítsük barátságainkat az edzések során.</p>
                         </div>
                     </div>
                     <div class="hobby_card">
@@ -289,7 +286,7 @@
                         </div>
                         <div class="content">
                             <p class="fs-3 fw-medium" data-i18n="hobbies.numberFour">Smink</p>
-                            <p class="fs-6 fw-normal" data-i18n="hobbies.line4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis numquam, alias laborum eaque natus dolor totam perspiciatis adipisci ipsum rem amet nobis commodi placeat!</p>
+                            <p class="fs-6 fw-normal" data-i18n="hobbies.line4">A sminkelés mint hobbi lehetőséget ad az embereknek arra, hogy kifejezzék kreativitásukat és önkifejezésüket a smink segítségével.</p>
                         </div>
                     </div>
                 </div>
@@ -299,20 +296,24 @@
             <div class="contact_me_container">
                 <p class="fs-2 fw-bold" data-i18n="contact.title">Írj nekem</p>
                 <form class="row g-3">
-                    <div class="col-md-6">
-                      <label for="validationDefault01" class="form-label" data-i18n="contact.first">First name</label>
-                      <input type="text" class="form-control" id="validationDefault01" required>
+                    <div class="col-md-4">
+                        <label for="validationDefault02" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="validationDefault02" required name="email">
                     </div>
-                    <div class="col-md-6">
-                      <label for="validationDefault02" class="form-label" data-i18n="contact.last">Last name</label>
-                      <input type="text" class="form-control" id="validationDefault02" required>
+                    <div class="col-md-4">
+                      <label for="validationDefault01" class="form-label" data-i18n="contact.first">Keresztnév</label>
+                      <input type="text" class="form-control" id="validationDefault01" required name="firstname">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationDefault02" class="form-label" data-i18n="contact.last">Vezetéknév</label>
+                      <input type="text" class="form-control" id="validationDefault02" required name="lastname">
                     </div>
                     <div class="col-12">
-                        <label for="validationTextarea" class="form-label" data-i18n="contact.text">Textarea</label>
-                        <textarea class="form-control" id="validationTextarea" required></textarea>
+                        <label for="validationTextarea" class="form-label" data-i18n="contact.text">Üzenet</label>
+                        <textarea class="form-control" id="validationTextarea" required name="message"></textarea>
                       </div>
                     <div class="col-12">
-                      <button class="submit_button" type="submit" data-i18n="contact.submit">Submit form</button>
+                      <button class="submit_button" type="submit" data-i18n="contact.submit">Küldés</button>
                     </div>
                   </form>
             </div>
@@ -323,6 +324,6 @@
     <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>    
-    <script src="js/trans.js?=1"></script>
+    <script src="js/trans.js"></script>
 </body>
 </html>
