@@ -58,9 +58,9 @@ const lngs = {
                   schools: {
                     title: "Education",
                     line1: "High School",
-                    line2: "2015. september - 2019. june",
+                    line2: "2015. September - 2019. June",
                     line4: "After High School",
-                    line5: "2019. september - 2020. june",
+                    line5: "2019. September - 2020. June",
                   },
                   jobs: {
                     title: "Jobs",
@@ -132,9 +132,9 @@ const lngs = {
                   schools: {
                     title: "Tanulmányok",
                     line1: "Középiskola",
-                    line2: "2015. szeptember - 2019. június",
+                    line2: "2015. Szeptember - 2019. Június",
                     line4: "Szakképesítés",
-                    line5: "2019. szeptember - 2020. június",
+                    line5: "2019. Szeptember - 2020. Június",
                   },
                   jobs: {
                     title: "Munkahelyek",
